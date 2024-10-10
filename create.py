@@ -110,6 +110,5 @@ os.system(f"g++ makemonotone.cpp  -L{s} -lgmp")
 
 result = os.system(f"g++ makemonotone.cpp -L{s} -lgmp > /dev/null 2>&1")
 
-# Check if the compilation failed
 if result != 0:
     print("Error: Compilation failed.")
